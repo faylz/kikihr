@@ -479,5 +479,6 @@
   </build>
    <modules>
    	<module>hr-permission-service</module>
+   	<module>hr-hrbp-web</module>
    </modules>
 </project>

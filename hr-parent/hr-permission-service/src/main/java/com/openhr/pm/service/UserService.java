@@ -6,4 +6,5 @@ import com.openhr.pm.entity.User;
 public interface UserService {
 	User selectUserById(String id); 
 	PageInfo<User> queryByPage(String userName,Integer pageNo,Integer pageSize);
+	public void addNew(User user);
 }

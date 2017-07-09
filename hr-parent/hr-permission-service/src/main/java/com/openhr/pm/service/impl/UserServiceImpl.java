@@ -48,6 +48,11 @@ public class UserServiceImpl implements UserService{
 	public User selectUserById(String id) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void addNew(User user) {
+		userMapper.insert(user);
 	}  
 
 }

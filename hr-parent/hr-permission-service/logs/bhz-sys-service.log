@@ -1,56 +1,299 @@
-2017-07-09 11:52:15,763 INFO [org.logicalcobwebs.proxool.null] - Shutting down 'null' pool immediately [Shutdown Hook]
-2017-07-09 11:52:15,776 INFO [org.logicalcobwebs.proxool.PrototyperController] - Stopping Prototyper thread
-2017-07-09 11:52:15,777 INFO [org.logicalcobwebs.proxool.HouseKeeperController] - Stopping HouseKeeper thread
-2017-07-09 12:16:00,426 INFO [org.logicalcobwebs.proxool.null] - Shutting down 'null' pool immediately [Shutdown Hook]
-2017-07-09 12:16:00,430 INFO [org.logicalcobwebs.proxool.PrototyperController] - Stopping Prototyper thread
-2017-07-09 12:16:00,430 INFO [org.logicalcobwebs.proxool.HouseKeeperController] - Stopping HouseKeeper thread
-2017-07-09 12:18:24  [ main:0 ] - [ DEBUG ]  Identified candidate component class: file [D:\workspace\githubwork\kikihr\hr-parent\hr-permission-service\target\classes\com\openhr\pm\mapper\UserMapper.class]
-2017-07-09 12:18:24  [ main:0 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'userMapper' and 'com.openhr.pm.mapper.UserMapper' mapperInterface
-2017-07-09 12:18:24  [ main:0 ] - [ DEBUG ]  Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
-2017-07-09 12:18:24  [ main:266 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2017-07-09 12:18:25  [ main:453 ] - [ DEBUG ]  Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
-2017-07-09 12:18:25  [ main:500 ] - [ DEBUG ]  Registered shutdownHook
-2017-07-09 12:18:25  [ main:500 ] - [ DEBUG ]  Registering 'null' house keeper
-2017-07-09 12:18:25  [ main:500 ] - [ DEBUG ]  Starting a house keeper thread
-2017-07-09 12:18:25  [ Prototyper:812 ] - [ DEBUG ]  Remembering default value: getTransactionIsolation() = 4
-2017-07-09 12:18:25  [ Prototyper:812 ] - [ DEBUG ]  Remembering default value: getHoldability() = 2
-2017-07-09 12:18:25  [ Prototyper:812 ] - [ DEBUG ]  Remembering default value: getCatalog() = zhrclound
-2017-07-09 12:18:25  [ Prototyper:812 ] - [ DEBUG ]  Remembering default value: isReadOnly() = false
-2017-07-09 12:18:25  [ Prototyper:812 ] - [ DEBUG ]  Remembering default value: getTypeMap() = {}
-2017-07-09 12:18:25  [ Prototyper:812 ] - [ INFO ]  Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
-2017-07-09 12:18:25  [ Prototyper:812 ] - [ DEBUG ]  000000 (01/02/00) - Connection #2 created to achieve minimum of 2 = AVAILABLE
-2017-07-09 12:18:25  [ main:812 ] - [ DEBUG ]  000000 (01/02/00) - Connection #1 created on demand = ACTIVE
-2017-07-09 12:18:25  [ main:890 ] - [ DEBUG ]  Implementing interface java.sql.Connection
-2017-07-09 12:18:25  [ main:890 ] - [ DEBUG ]  Implementing interface java.io.Serializable
-2017-07-09 12:18:25  [ main:906 ] - [ DEBUG ]  Implementing interface java.lang.AutoCloseable
-2017-07-09 12:18:25  [ main:906 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
-2017-07-09 12:18:25  [ main:906 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.Connection
-2017-07-09 12:18:25  [ main:906 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.MySQLConnection
-2017-07-09 12:18:25  [ main:906 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.ConnectionProperties
-2017-07-09 12:18:26  [ main:1608 ] - [ DEBUG ]  Implementing interface java.sql.DatabaseMetaData
-2017-07-09 12:18:26  [ main:1608 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
-2017-07-09 12:18:26  [ main:1893 ] - [ DEBUG ]  Parsed mapper file: 'file [D:\workspace\githubwork\kikihr\hr-parent\hr-permission-service\target\classes\mapper\UserMapper.xml]'
-2017-07-09 12:18:26  [ main:2111 ] - [ DEBUG ]  Creating a new SqlSession
-2017-07-09 12:18:26  [ main:2142 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bbd4b56] was not registered for synchronization because synchronization is not active
-2017-07-09 12:18:26  [ main:2283 ] - [ DEBUG ]  JDBC Connection [436114976(com.mysql.jdbc.JDBC4Connection@19321c35)] will not be managed by Spring
-2017-07-09 12:18:26  [ main:2283 ] - [ DEBUG ]  ooo Using Connection [436114976(com.mysql.jdbc.JDBC4Connection@19321c35)]
-2017-07-09 12:18:26  [ main:2298 ] - [ DEBUG ]  ==>  Preparing: SELECT count(*) FROM pm_user 
-2017-07-09 12:18:26  [ main:2314 ] - [ DEBUG ]  Implementing interface java.sql.PreparedStatement
-2017-07-09 12:18:26  [ main:2314 ] - [ DEBUG ]  Implementing interface java.sql.Statement
-2017-07-09 12:18:26  [ main:2314 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.Statement
-2017-07-09 12:18:26  [ main:2314 ] - [ DEBUG ]  Implementing interface java.lang.AutoCloseable
-2017-07-09 12:18:26  [ main:2314 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
-2017-07-09 12:18:27  [ main:2423 ] - [ DEBUG ]  ==> Parameters: 
-2017-07-09 12:18:27  [ main:2454 ] - [ DEBUG ]  ooo Using Connection [436114976(com.mysql.jdbc.JDBC4Connection@19321c35)]
-2017-07-09 12:18:27  [ main:2454 ] - [ DEBUG ]  ==>  Preparing: select FID, FNUMBER, FNAME, FPASSWORD from pm_user limit ?,? 
-2017-07-09 12:18:27  [ main:2454 ] - [ DEBUG ]  ==> Parameters: 0(Integer), 1(Integer)
-2017-07-09 12:18:27  [ main:2454 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bbd4b56]
-2017-07-09 12:18:27  [ ShutdownHook:2470 ] - [ DEBUG ]  Running ShutdownHook
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ INFO ]  Shutting down 'null' pool immediately [Shutdown Hook]
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ DEBUG ]  000002 (00/01/00) - #0001 removed because of shutdown.
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ DEBUG ]  Connection #1 closed
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ DEBUG ]  000002 (00/00/00) - #0002 removed because of shutdown.
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ DEBUG ]  Connection #2 closed
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ INFO ]  'null' pool has been closed down by Shutdown Hook in 0 milliseconds.
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ INFO ]  Stopping Prototyper thread
-2017-07-09 12:18:27  [ Shutdown Hook:2470 ] - [ INFO ]  Stopping HouseKeeper thread
+2017-07-10 07:02:51  [ Prototyper:2822 ] - [ ERROR ]  Prototype
+ com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1129)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:358)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2498)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2320)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:347)
+	at java.sql.DriverManager.getConnection(DriverManager.java:579)
+	at java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.logicalcobwebs.proxool.DefaultConnectionBuilder.buildConnection(DefaultConnectionBuilder.java:39)
+	at org.logicalcobwebs.proxool.Prototyper.buildConnection(Prototyper.java:159)
+	at org.logicalcobwebs.proxool.Prototyper.sweep(Prototyper.java:102)
+	at org.logicalcobwebs.proxool.PrototyperThread.run(PrototyperThread.java:44)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:308)
+	... 18 more
+2017-07-10 07:02:51  [ main:2823 ] - [ ERROR ]  Could not get a databaseId from dataSource
+ com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1129)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:358)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2498)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2320)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:347)
+	at java.sql.DriverManager.getConnection(DriverManager.java:579)
+	at java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.logicalcobwebs.proxool.DefaultConnectionBuilder.buildConnection(DefaultConnectionBuilder.java:39)
+	at org.logicalcobwebs.proxool.Prototyper.buildConnection(Prototyper.java:159)
+	at org.logicalcobwebs.proxool.ConnectionPool.getConnection(ConnectionPool.java:211)
+	at org.logicalcobwebs.proxool.ProxoolDataSource.getConnection(ProxoolDataSource.java:97)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1280)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:802)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:308)
+	... 94 more
+nner.main(RemoteTestRunner.java:197)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:241)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:308)
+	... 94 more
+2017-07-10 07:02:52  [ main:3035 ] - [ DEBUG ]  Parsed mapper file: 'file [D:\workspace\githubwork\kikihr\hr-parent\hr-permission-service\target\classes\mapper\UserMapper.xml]'
+2017-07-10 07:02:52  [ main:3316 ] - [ DEBUG ]  Creating a new SqlSession
+2017-07-10 07:02:52  [ main:3350 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@545652f9] was not registered for synchronization because synchronization is not active
+2017-07-10 07:02:54  [ main:5563 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@545652f9]
+2017-07-10 07:02:54  [ ShutdownHook:5608 ] - [ DEBUG ]  Running ShutdownHook
+2017-07-10 07:02:54  [ Shutdown Hook:5609 ] - [ INFO ]  Shutting down 'null' pool immediately [Shutdown Hook]
+2017-07-10 07:02:54  [ Shutdown Hook:5609 ] - [ INFO ]  'null' pool has been closed down by Shutdown Hook in 0 milliseconds.
+2017-07-10 07:02:54  [ Shutdown Hook:5610 ] - [ DEBUG ]  No connections required manual removal.
+2017-07-10 07:02:54  [ Shutdown Hook:5629 ] - [ INFO ]  Stopping Prototyper thread
+2017-07-10 07:02:54  [ Shutdown Hook:5629 ] - [ INFO ]  Stopping HouseKeeper thread
+2017-07-10 07:03:20  [ main:0 ] - [ DEBUG ]  Identified candidate component class: file [D:\workspace\githubwork\kikihr\hr-parent\hr-permission-service\target\classes\com\openhr\pm\mapper\UserMapper.class]
+2017-07-10 07:03:21  [ main:7 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'userMapper' and 'com.openhr.pm.mapper.UserMapper' mapperInterface
+2017-07-10 07:03:21  [ main:11 ] - [ DEBUG ]  Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2017-07-10 07:03:21  [ main:256 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-07-10 07:03:21  [ main:440 ] - [ DEBUG ]  Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+2017-07-10 07:03:21  [ main:482 ] - [ DEBUG ]  Registered shutdownHook
+2017-07-10 07:03:21  [ main:487 ] - [ DEBUG ]  Registering 'null' house keeper
+2017-07-10 07:03:21  [ main:490 ] - [ DEBUG ]  Starting a house keeper thread
+2017-07-10 07:03:21  [ Prototyper:814 ] - [ DEBUG ]  Remembering default value: getTransactionIsolation() = 4
+2017-07-10 07:03:21  [ Prototyper:815 ] - [ DEBUG ]  Remembering default value: getHoldability() = 2
+2017-07-10 07:03:21  [ Prototyper:816 ] - [ DEBUG ]  Remembering default value: getCatalog() = zhrclound
+2017-07-10 07:03:21  [ Prototyper:817 ] - [ DEBUG ]  Remembering default value: isReadOnly() = false
+2017-07-10 07:03:21  [ Prototyper:817 ] - [ DEBUG ]  Remembering default value: getTypeMap() = {}
+2017-07-10 07:03:21  [ Prototyper:817 ] - [ INFO ]  Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017-07-10 07:03:21  [ main:817 ] - [ INFO ]  Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017-07-10 07:03:21  [ Prototyper:819 ] - [ DEBUG ]  000000 (01/02/00) - Connection #2 created to achieve minimum of 2 = AVAILABLE
+2017-07-10 07:03:21  [ main:819 ] - [ DEBUG ]  000000 (01/02/00) - Connection #1 created on demand = ACTIVE
+2017-07-10 07:03:21  [ main:895 ] - [ DEBUG ]  Implementing interface java.sql.Connection
+2017-07-10 07:03:21  [ main:896 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.Connection
+2017-07-10 07:03:21  [ main:897 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.MySQLConnection
+2017-07-10 07:03:21  [ main:898 ] - [ DEBUG ]  Implementing interface java.lang.AutoCloseable
+2017-07-10 07:03:21  [ main:898 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
+2017-07-10 07:03:21  [ main:899 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.ConnectionProperties
+2017-07-10 07:03:21  [ main:900 ] - [ DEBUG ]  Implementing interface java.io.Serializable
+2017-07-10 07:03:22  [ main:1657 ] - [ DEBUG ]  Implementing interface java.sql.DatabaseMetaData
+2017-07-10 07:03:22  [ main:1658 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
+2017-07-10 07:03:22  [ main:1937 ] - [ DEBUG ]  Parsed mapper file: 'file [D:\workspace\githubwork\kikihr\hr-parent\hr-permission-service\target\classes\mapper\UserMapper.xml]'
+2017-07-10 07:03:23  [ main:2169 ] - [ DEBUG ]  Creating a new SqlSession
+2017-07-10 07:03:23  [ main:2200 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42be11bc] was not registered for synchronization because synchronization is not active
+2017-07-10 07:03:23  [ main:2355 ] - [ DEBUG ]  JDBC Connection [1172381874(com.mysql.jdbc.JDBC4Connection@3f29a9f5)] will not be managed by Spring
+2017-07-10 07:03:23  [ main:2359 ] - [ DEBUG ]  ooo Using Connection [1172381874(com.mysql.jdbc.JDBC4Connection@3f29a9f5)]
+2017-07-10 07:03:23  [ main:2373 ] - [ DEBUG ]  ==>  Preparing: SELECT count(*) FROM pm_user 
+2017-07-10 07:03:23  [ main:2379 ] - [ DEBUG ]  Implementing interface java.sql.PreparedStatement
+2017-07-10 07:03:23  [ main:2380 ] - [ DEBUG ]  Implementing interface java.lang.AutoCloseable
+2017-07-10 07:03:23  [ main:2380 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.Statement
+2017-07-10 07:03:23  [ main:2381 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
+2017-07-10 07:03:23  [ main:2381 ] - [ DEBUG ]  Implementing interface java.sql.Statement
+2017-07-10 07:03:23  [ main:2516 ] - [ DEBUG ]  ==> Parameters: 
+2017-07-10 07:03:23  [ main:2550 ] - [ DEBUG ]  ooo Using Connection [1172381874(com.mysql.jdbc.JDBC4Connection@3f29a9f5)]
+2017-07-10 07:03:23  [ main:2551 ] - [ DEBUG ]  ==>  Preparing: select FID, FNUMBER, FNAME, FPASSWORD from pm_user limit ?,? 
+2017-07-10 07:03:23  [ main:2552 ] - [ DEBUG ]  ==> Parameters: 0(Integer), 1(Integer)
+2017-07-10 07:03:23  [ main:2555 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42be11bc]
+2017-07-10 07:03:23  [ ShutdownHook:2560 ] - [ DEBUG ]  Running ShutdownHook
+2017-07-10 07:03:23  [ Shutdown Hook:2561 ] - [ INFO ]  Shutting down 'null' pool immediately [Shutdown Hook]
+2017-07-10 07:03:23  [ Shutdown Hook:2564 ] - [ DEBUG ]  000002 (00/01/00) - #0001 removed because of shutdown.
+2017-07-10 07:03:23  [ Shutdown Hook:2565 ] - [ DEBUG ]  Connection #1 closed
+2017-07-10 07:03:23  [ Shutdown Hook:2566 ] - [ DEBUG ]  000002 (00/00/00) - #0002 removed because of shutdown.
+2017-07-10 07:03:23  [ Shutdown Hook:2566 ] - [ DEBUG ]  Connection #2 closed
+2017-07-10 07:03:23  [ Shutdown Hook:2567 ] - [ INFO ]  'null' pool has been closed down by Shutdown Hook in 6 milliseconds.
+2017-07-10 07:03:23  [ Shutdown Hook:2568 ] - [ INFO ]  Stopping Prototyper thread
+2017-07-10 07:03:23  [ Shutdown Hook:2568 ] - [ INFO ]  Stopping HouseKeeper thread
+2017-07-10 07:03:39  [ main:0 ] - [ DEBUG ]  Identified candidate component class: file [D:\workspace\githubwork\kikihr\hr-parent\hr-permission-service\target\classes\com\openhr\pm\mapper\UserMapper.class]
+2017-07-10 07:03:39  [ main:8 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'userMapper' and 'com.openhr.pm.mapper.UserMapper' mapperInterface
+2017-07-10 07:03:39  [ main:14 ] - [ DEBUG ]  Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2017-07-10 07:03:39  [ main:371 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-07-10 07:03:40  [ main:567 ] - [ DEBUG ]  Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+2017-07-10 07:03:40  [ main:615 ] - [ DEBUG ]  Registered shutdownHook
+2017-07-10 07:03:40  [ main:621 ] - [ DEBUG ]  Registering 'null' house keeper
+2017-07-10 07:03:40  [ main:625 ] - [ DEBUG ]  Starting a house keeper thread
+2017-07-10 07:03:40  [ Prototyper:967 ] - [ DEBUG ]  Remembering default value: getTransactionIsolation() = 4
+2017-07-10 07:03:40  [ Prototyper:969 ] - [ DEBUG ]  Remembering default value: getHoldability() = 2
+2017-07-10 07:03:40  [ Prototyper:969 ] - [ DEBUG ]  Remembering default value: getCatalog() = zhrclound
+2017-07-10 07:03:40  [ Prototyper:970 ] - [ DEBUG ]  Remembering default value: isReadOnly() = false
+2017-07-10 07:03:40  [ Prototyper:970 ] - [ DEBUG ]  Remembering default value: getTypeMap() = {}
+2017-07-10 07:03:40  [ Prototyper:971 ] - [ INFO ]  Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017-07-10 07:03:40  [ main:971 ] - [ INFO ]  Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2017-07-10 07:03:40  [ Prototyper:972 ] - [ DEBUG ]  000000 (01/02/00) - Connection #2 created to achieve minimum of 2 = AVAILABLE
+2017-07-10 07:03:40  [ main:972 ] - [ DEBUG ]  000000 (01/02/00) - Connection #1 created on demand = ACTIVE
+2017-07-10 07:03:40  [ main:1053 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.Connection
+2017-07-10 07:03:40  [ main:1055 ] - [ DEBUG ]  Implementing interface java.sql.Connection
+2017-07-10 07:03:40  [ main:1056 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
+2017-07-10 07:03:40  [ main:1057 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.MySQLConnection
+2017-07-10 07:03:40  [ main:1058 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.ConnectionProperties
+2017-07-10 07:03:40  [ main:1058 ] - [ DEBUG ]  Implementing interface java.io.Serializable
+2017-07-10 07:03:40  [ main:1059 ] - [ DEBUG ]  Implementing interface java.lang.AutoCloseable
+2017-07-10 07:03:41  [ main:1814 ] - [ DEBUG ]  Implementing interface java.sql.DatabaseMetaData
+2017-07-10 07:03:41  [ main:1815 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
+2017-07-10 07:03:41  [ main:2160 ] - [ DEBUG ]  Parsed mapper file: 'file [D:\workspace\githubwork\kikihr\hr-parent\hr-permission-service\target\classes\mapper\UserMapper.xml]'
+2017-07-10 07:03:41  [ main:2260 ] - [ DEBUG ]  Creating a new SqlSession
+2017-07-10 07:03:41  [ main:2295 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@666b58a] was not registered for synchronization because synchronization is not active
+2017-07-10 07:03:41  [ main:2343 ] - [ DEBUG ]  JDBC Connection [1403399033(com.mysql.jdbc.JDBC4Connection@42703fd6)] will not be managed by Spring
+2017-07-10 07:03:41  [ main:2346 ] - [ DEBUG ]  ooo Using Connection [1403399033(com.mysql.jdbc.JDBC4Connection@42703fd6)]
+2017-07-10 07:03:41  [ main:2360 ] - [ DEBUG ]  ==>  Preparing: insert into pm_user (FID, FNUMBER, FNAME, FPASSWORD) values (?, ?, ?, ?) 
+2017-07-10 07:03:41  [ main:2369 ] - [ DEBUG ]  Implementing interface com.mysql.jdbc.Statement
+2017-07-10 07:03:41  [ main:2369 ] - [ DEBUG ]  Implementing interface java.sql.Wrapper
+2017-07-10 07:03:41  [ main:2370 ] - [ DEBUG ]  Implementing interface java.sql.PreparedStatement
+2017-07-10 07:03:41  [ main:2371 ] - [ DEBUG ]  Implementing interface java.sql.Statement
+2017-07-10 07:03:41  [ main:2371 ] - [ DEBUG ]  Implementing interface java.lang.AutoCloseable
+2017-07-10 07:03:41  [ main:2484 ] - [ DEBUG ]  ==> Parameters: 7ad9b09f-e6db-40d5-8c0d-53076f645ca3(String), null, hahaha(String), 123(String)
+2017-07-10 07:03:41  [ main:2493 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@666b58a]
+2017-07-10 07:03:42  [ main:2666 ] - [ DEBUG ]  Creating a new SqlSession
+2017-07-10 07:03:42  [ main:2667 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ac1e4e8] was not registered for synchronization because synchronization is not active
+2017-07-10 07:03:42  [ main:2782 ] - [ DEBUG ]  JDBC Connection [930358153(com.mysql.jdbc.JDBC4Connection@29c913d0)] will not be managed by Spring
+2017-07-10 07:03:42  [ main:2783 ] - [ DEBUG ]  ooo Using Connection [930358153(com.mysql.jdbc.JDBC4Connection@29c913d0)]
+2017-07-10 07:03:42  [ main:2784 ] - [ DEBUG ]  ==>  Preparing: SELECT count(*) FROM pm_user 
+2017-07-10 07:03:42  [ main:2785 ] - [ DEBUG ]  ==> Parameters: 
+2017-07-10 07:03:42  [ main:2810 ] - [ DEBUG ]  ooo Using Connection [930358153(com.mysql.jdbc.JDBC4Connection@29c913d0)]
+2017-07-10 07:03:42  [ main:2811 ] - [ DEBUG ]  ==>  Preparing: select FID, FNUMBER, FNAME, FPASSWORD from pm_user limit ?,? 
+2017-07-10 07:03:42  [ main:2813 ] - [ DEBUG ]  ==> Parameters: 0(Integer), 1(Integer)
+2017-07-10 07:03:42  [ main:2817 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ac1e4e8]
+2017-07-10 07:03:42  [ ShutdownHook:2821 ] - [ DEBUG ]  Running ShutdownHook
+2017-07-10 07:03:42  [ Shutdown Hook:2822 ] - [ INFO ]  Shutting down 'null' pool immediately [Shutdown Hook]
+2017-07-10 07:03:42  [ Shutdown Hook:2825 ] - [ DEBUG ]  000003 (00/01/00) - #0001 removed because of shutdown.
+2017-07-10 07:03:42  [ Shutdown Hook:2826 ] - [ DEBUG ]  Connection #1 closed
+2017-07-10 07:03:42  [ Shutdown Hook:2827 ] - [ DEBUG ]  000003 (00/00/00) - #0002 removed because of shutdown.
+2017-07-10 07:03:42  [ Shutdown Hook:2827 ] - [ DEBUG ]  Connection #2 closed
+2017-07-10 07:03:42  [ Shutdown Hook:2828 ] - [ INFO ]  'null' pool has been closed down by Shutdown Hook in 6 milliseconds.
+2017-07-10 07:03:42  [ Shutdown Hook:2828 ] - [ INFO ]  Stopping Prototyper thread
+2017-07-10 07:03:42  [ Shutdown Hook:2829 ] - [ INFO ]  Stopping HouseKeeper thread

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,15 @@ public class UserServiceTest extends SpringTestCase {
     public void queryByPageTest(){  
         PageInfo<User> page =  userService.queryByPage(null, 1, 1);
         System.out.println(page);
+    }
+    
+    @Test
+    public void addUser(){
+    	User user  = new User();
+    	user.setFid(UUID.randomUUID().toString());
+    	user.setFname("hahaha");
+    	user.setFpassword("123");
+    	userService.addNew(user);
     }
     @Test
     public void gen(){

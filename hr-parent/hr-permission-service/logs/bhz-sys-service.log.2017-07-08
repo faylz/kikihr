@@ -1,0 +1,6 @@
+2017-07-08 08:04:32,769 INFO [org.logicalcobwebs.proxool.null] - Shutting down 'null' pool immediately [Shutdown Hook]
+2017-07-08 08:04:32,769 INFO [org.logicalcobwebs.proxool.PrototyperController] - Stopping Prototyper thread
+2017-07-08 08:04:32,769 INFO [org.logicalcobwebs.proxool.HouseKeeperController] - Stopping HouseKeeper thread
+2017-07-08 08:59:44,696 INFO [org.logicalcobwebs.proxool.null] - Shutting down 'null' pool immediately [Shutdown Hook]
+2017-07-08 08:59:44,701 INFO [org.logicalcobwebs.proxool.PrototyperController] - Stopping Prototyper thread
+2017-07-08 08:59:44,701 INFO [org.logicalcobwebs.proxool.HouseKeeperController] - Stopping HouseKeeper thread

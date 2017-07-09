@@ -5,14 +5,6 @@
     <artifactId>hr-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>hr-permission-service</artifactId>
-  <name>hr-permission-service</name>
-  <description>hr-permission</description>
-  <dependencies>
-  	<dependency>
-  		<groupId>com.openhr</groupId>
-    	<artifactId>hr-permission-facade</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  </dependencies>
+  <artifactId>hr-permission-facade</artifactId>
+  <name>permission-facade</name>
 </project>

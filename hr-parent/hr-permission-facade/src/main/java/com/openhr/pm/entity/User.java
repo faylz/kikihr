@@ -1,6 +1,6 @@
 package com.openhr.pm.entity;
 
-public class PmUser {
+public class User {
     private String fid;
 
     private String fnumber;

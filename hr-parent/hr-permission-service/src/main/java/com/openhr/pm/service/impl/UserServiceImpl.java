@@ -7,29 +7,29 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.openhr.pm.entity.PmUser;
-import com.openhr.pm.entity.PmUserExample;
-import com.openhr.pm.entity.PmUserExample.Criteria;
-import com.openhr.pm.mapper.PmUserMapper;
+import com.openhr.pm.entity.User;
+import com.openhr.pm.entity.UserExample;
+import com.openhr.pm.entity.UserExample.Criteria;
+import com.openhr.pm.mapper.UserMapper;
 import com.openhr.pm.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService{
 	
 	@Autowired
-	PmUserMapper userMapper;
+	UserMapper userMapper;
 	
 	@Override
-	public PageInfo<PmUser> queryByPage(String userName, Integer pageNo,Integer pageSize) {
+	public PageInfo<User> queryByPage(String userName, Integer pageNo,Integer pageSize) {
 	    pageNo = pageNo == null?1:pageNo;
 	    pageSize = pageSize == null?10:pageSize;
 	    PageHelper.startPage(pageNo, pageSize);
-	    PmUserExample excExample = new PmUserExample();
+	    UserExample excExample = new UserExample();
 	    Criteria criteria = excExample.createCriteria();
 //	    criteria.andFnameEqualTo(userName);
-	    List<PmUser> list = userMapper.selectByExample(excExample);
+	    List<User> list = userMapper.selectByExample(excExample);
 	    //用PageInfo对结果进行包装
-	    PageInfo<PmUser> page = new PageInfo<PmUser>(list);
+	    PageInfo<User> page = new PageInfo<User>(list);
 	    //测试PageInfo全部属性
 	    System.out.println(page.getPageNum());
 	    System.out.println(page.getPageSize());
@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public PmUser selectUserById(String id) {
+	public User selectUserById(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}  

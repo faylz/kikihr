@@ -478,7 +478,8 @@
     </plugins>    
   </build>
    <modules>
-   	<module>hr-permission-service</module>
    	<module>hr-hrbp-web</module>
+   	<module>hr-permission-facade</module>
+   	<module>hr-permission-service</module>
    </modules>
 </project>

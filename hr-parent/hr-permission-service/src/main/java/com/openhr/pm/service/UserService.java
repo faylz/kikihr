@@ -1,9 +1,9 @@
 package com.openhr.pm.service;
 
 import com.github.pagehelper.PageInfo;
-import com.openhr.pm.entity.PmUser;
+import com.openhr.pm.entity.User;
 
 public interface UserService {
-	PmUser selectUserById(String id); 
-	PageInfo<PmUser> queryByPage(String userName,Integer pageNo,Integer pageSize);
+	User selectUserById(String id); 
+	PageInfo<User> queryByPage(String userName,Integer pageNo,Integer pageSize);
 }

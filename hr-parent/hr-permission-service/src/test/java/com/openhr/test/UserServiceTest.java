@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageInfo;
-import com.openhr.pm.entity.PmUser;
+import com.openhr.pm.entity.User;
 import com.openhr.pm.service.UserService;
 
 public class UserServiceTest extends SpringTestCase {
@@ -21,7 +21,7 @@ public class UserServiceTest extends SpringTestCase {
    
     @Test  
     public void queryByPageTest(){  
-        PageInfo<PmUser> page =  userService.queryByPage(null, 1, 1);
+        PageInfo<User> page =  userService.queryByPage(null, 1, 1);
         System.out.println(page);
     }
     @Test

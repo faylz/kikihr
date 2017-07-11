@@ -9,11 +9,11 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.openhr.pm.entity.User;
 import com.openhr.pm.entity.UserExample;
+import com.openhr.pm.service.UserService;
 import com.openhr.pm.entity.UserExample.Criteria;
 import com.openhr.pm.mapper.UserMapper;
-import com.openhr.pm.service.UserService;
 
-@Service
+@Service("userService")
 public class UserServiceImpl implements UserService{
 	
 	@Autowired
@@ -55,4 +55,9 @@ public class UserServiceImpl implements UserService{
 		userMapper.insert(user);
 	}  
 
+	
+	public void testget() {
+		//http://localhost:8888/provider/userService/testget
+		System.out.println("测试...get");
+	}
 }

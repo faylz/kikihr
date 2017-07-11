@@ -7,6 +7,13 @@
   </parent>
   <artifactId>hr-hrbp-web</artifactId>
   <packaging>war</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.openhr</groupId>
+    	<artifactId>hr-permission-facade</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
   <build>
     <finalName>hr-hrbp-web</finalName>
   

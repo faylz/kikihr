@@ -57,7 +57,7 @@
             /> -->
     </bean>
 	<!-- 配置dubbo服务 -->
-	<!-- <import resource="classpath:dubbo-provider.xml" /> -->
+	<import resource="classpath:dubbo-provider.xml" />
 	
 	
 </beans>
